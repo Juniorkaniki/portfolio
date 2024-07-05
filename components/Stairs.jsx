@@ -1,4 +1,4 @@
-/*import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const stairAnimation = {
   initial: {
@@ -20,7 +20,7 @@ const reverseIndex = (index) => {
 const Stairs = () => {
   return (
     <>
-      {/* render 6 motion divs *//*};
+      {/* render 6 motion divs */};
       {[...Array(6)].map((_, index) => {
         return (
           <motion.div
@@ -42,4 +42,4 @@ const Stairs = () => {
   );
 };
 
-export default Stairs;*/
+export default Stairs;
