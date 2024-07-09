@@ -1,12 +1,16 @@
 "use client";
 
-import React, { createContext } from 'react';
-import { Component, Info } from "lucide-react";
-import { FaHtml5, FaJs, FaCss3, FaFigma, FaNodeJs, FaFlutter, FaDart, FaCsharp, FaReact } from "react-icons/fa";
+import React from 'react';
+import { FaHtml5, FaJs, FaCss3, FaFigma, FaNodeJs, FaReact } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+//import { Tooltip, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { motion } from 'framer-motion';
+import { FaFlutter, FaCsharp } from "react-icons/fa";
 
 const about = {
-  title: "About me ",
+  title: "About me",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil mollitia excepturi, corporis amet fugit voluptate, in quaerat dolores, nulla magni hic aspernatur velit aliquam atque repellat provident autem deserunt accusantium?",
   info: [
@@ -19,7 +23,7 @@ const about = {
       fieldValue: "(+243) 972 800 949",
     },
     {
-      fieldName: "Experiences ",
+      fieldName: "Experiences",
       fieldValue: "3+ Ans",
     },
     {
@@ -99,7 +103,7 @@ const education = {
   items: [
     {
       institution: "Tupedane Institut",
-      degree: "Social Diplôme d'Etat",
+      degree: "Diplôme d'Etat en technique Social",
       duration: "2018",
     },
     {
@@ -144,18 +148,12 @@ const skills = {
       icon: <FaCss3 />,
       name: "CSS 3",
     },
-    {
-      icon: <FaFlutter />,
-      name: "Flutter",
-    },
+    
     {
       icon: <FaJs />,
       name: "JavaScript",
     },
-    {
-      icon: <FaCsharp />,
-      name: "C#",
-    },
+   
     {
       icon: <FaReact />,
       name: "React.js",
@@ -176,20 +174,18 @@ const skills = {
       icon: <FaFigma />,
       name: "Figma",
     },
+    {
+      icon: <FaFlutter />,
+      name: "Flutter",
+    },
+    {
+      icon: <FaCsharp />,
+      name: "C#",
+    },
   ],
 };
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { motion } from "framer-motion";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { ScrollArea } from "@/components/ui/scroll-area";
-
-const resume = () => {
+const Resume = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -204,42 +200,91 @@ const resume = () => {
             <TabsTrigger value="skills">Competences</TabsTrigger>
             <TabsTrigger value="about">A propos de Moi</TabsTrigger>
           </TabsList>
-          {/*content*/}
           <div className="min-h-[70vh] w-full">
-             {/*exeperiences */}
             <TabsContent value="experiences" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{experience.description}</p>
                 <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] ">
-                    {experience.items.map((item, index)=>{
-                      return ( <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1" >
+                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                    {experience.items.map((item, index) => (
+                      <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
                         <span className="text-accent">
                           {item.duration}
                         </span>
                         <h3>
                           {item.position}
                         </h3>
-                        <div>
-                          {/* dot */}
-                          <span></span>
-                          <p>{item.company}</p>
+                        <div className="flex items-center gap-3">
+                          <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                          <p className="text-white/60">{item.company}</p>
                         </div>
                       </li>
-                      );  
-                    })}
+                    ))}
                   </ul>
                 </ScrollArea>
               </div>
             </TabsContent>
-             {/*education*/}
-            <TabsContent value="education" className="w-full">Education</TabsContent>
-             {/*Skilles*/}
-            <TabsContent value="skills" className="w-full">skills</TabsContent>
-             {/*About*/}
-             <TabsContent value="about" className="w-full">A propos </TabsContent>
-
+            <TabsContent value="education" className="w-full">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h3 className="text-4xl font-bold">{education.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                    {education.items.map((item, index) => (
+                      <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                        <span className="text-accent">
+                          {item.duration}
+                        </span>
+                        <h3>
+                          {item.degree}
+                        </h3>
+                        <div className="flex items-center gap-3">
+                          <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                          <p className="text-white/60">{item.institution}</p>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollArea>
+              </div>
+            </TabsContent>
+            <TabsContent value="skills" className="w-full">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h3 className="text-4xl font-bold">{skills.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                    {skills.skillList.map((skill, index) => (
+                      <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                        {skill.icon}
+                        <span className="text-accent">
+                          {skill.name}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollArea>
+              </div>
+            </TabsContent>
+            <TabsContent value="about" className="w-full">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h3 className="text-4xl font-bold">{about.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                  {about.info.map((info, index) => (
+                    <div key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                      <span className="text-accent">
+                        {info.fieldName}
+                      </span>
+                      <h3>
+                        {info.fieldValue}
+                      </h3>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </TabsContent>
           </div>
         </Tabs>
       </div>
@@ -247,4 +292,4 @@ const resume = () => {
   );
 };
 
-export default resume;
+export default Resume;
