@@ -4,10 +4,8 @@ import React from 'react';
 import { FaHtml5, FaJs, FaCss3, FaFigma, FaNodeJs, FaReact } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-//import { Tooltip, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from 'framer-motion';
-import { FaFlutter, FaCsharp } from "react-icons/fa";
 
 const about = {
   title: "About me",
@@ -173,14 +171,6 @@ const skills = {
     {
       icon: <FaFigma />,
       name: "Figma",
-    },
-    {
-      icon: <FaFlutter />,
-      name: "Flutter",
-    },
-    {
-      icon: <FaCsharp />,
-      name: "C#",
     },
   ],
 };
