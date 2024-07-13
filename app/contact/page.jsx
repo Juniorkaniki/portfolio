@@ -78,6 +78,8 @@ const Contact = () => {
               <Textarea
               className="h-[200px]" 
               placeholder="Type your message here."/>
+               {/* btn*/}
+               <Button size="md" className="max-w-40">Send Message</Button>
             </form>
           </div>
           {/* info */}
@@ -99,5 +101,5 @@ const Contact = () => {
     </motion.section>
   );
 };
-
+ 
 export default Contact;
