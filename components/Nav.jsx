@@ -8,7 +8,6 @@ const links = [
     name: "home",
     path: "/",
   },
-
   {
     name: "services",
     path: "/services",
@@ -30,6 +29,7 @@ const links = [
 const Nav = () => {
   const pathname = usePathname();
   console.log(pathname);
+
   return (
     <nav className="flex gap-8">
       {links.map((link, index) => {
@@ -37,9 +37,10 @@ const Nav = () => {
           <Link
             href={link.path}
             key={index}
-            className={`${ link.path === pathname && "text-accent border-b-2 border-accent"}
-            capitalize font-medium hover:text-accent transition-all`
-            }
+            className={`
+              ${link.path === pathname && "text-blue-500 border-b-2 border-blue-500"}
+              capitalize font-medium hover:text-blue-500 transition-all
+            `}
           >
             {link.name}
           </Link>

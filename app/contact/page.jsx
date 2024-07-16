@@ -95,14 +95,14 @@ const Contact = () => {
               className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
               onSubmit={handleSubmit}
             >
-              <h3 className="text-4xl text-accent">Travaillons ensembles !!</h3>
+              <h3 className="text-4xl text-blue-500 ">Travaillons ensembles !!</h3>
               <p className="text-white/60">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Laborum enim molestias eos ratione magni dolores quas et eius
                 dolor, fuga nulla? Architecto
               </p>
               {/* hidden input for redirection */}
-              <input type="hidden" name="_next" value="https://your-website.com/thank-you" />
+              <input type="hidden" name="_next" value="https://semanumerique.com" />
               {/* inputs */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input type="text" placeholder="Prénom" name="firstName" onChange={handleChange} value={formData.firstName} />
@@ -143,7 +143,7 @@ const Contact = () => {
                 <div key={index} className="flex items-center mb-4">
                   <div className="mr-4">{item.icon}</div>
                   <div>
-                    <h4 className="text-lg text-accent">{item.title}</h4>
+                    <h4 className="text-lg text-blue-500">{item.title}</h4>
                     <p className="text-white/60">{item.description}</p>
                   </div>
                 </div>
@@ -154,7 +154,7 @@ const Contact = () => {
         {successMessage && (
           <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
             <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-              <p className="text-xl text-accent">{successMessage}</p>
+              <p className="text-xl text-blue-500">{successMessage}</p>
               <Button size="md" className="mt-4" onClick={() => setSuccessMessage('')}>Close</Button>
             </div>
           </div>
