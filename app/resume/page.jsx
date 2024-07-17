@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
 const about = {
-  title: "About me",
+  title: "A propos de moi",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil mollitia excepturi, corporis amet fugit voluptate, in quaerat dolores, nulla magni hic aspernatur velit aliquam atque repellat provident autem deserunt accusantium?",
   info: [
@@ -51,7 +51,7 @@ const about = {
 // experiences data
 const experience = {
   icon: "/assets/resume/badge.svg",
-  title: "My Experiences",
+  title: "Mon Experiences",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil mollitia excepturi, corporis amet fugit voluptate, in quaerat dolores, nulla magni hic aspernatur velit aliquam atque repellat provident autem deserunt accusantium?",
   items: [
@@ -96,7 +96,7 @@ const experience = {
 // Education data
 const education = {
   icon: "/assets/resume/cap.svg",
-  title: "My Education",
+  title: "Mon Education",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil mollitia excepturi, corporis amet fugit voluptate, in quaerat dolores, nulla magni hic aspernatur velit aliquam atque repellat provident autem deserunt accusantium?",
   items: [
@@ -188,7 +188,7 @@ const Resume = () => {
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
             <TabsTrigger value="experiences">Experiences</TabsTrigger>
             <TabsTrigger value="education">Educations</TabsTrigger>
-            <TabsTrigger value="skills">Competences</TabsTrigger>
+            <TabsTrigger value="skills" >Competences</TabsTrigger>
             <TabsTrigger value="about">A propos de Moi</TabsTrigger>
           </TabsList>
           <div className="min-h-[70vh] w-full">
@@ -200,14 +200,14 @@ const Resume = () => {
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, index) => (
                       <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
-                        <span className="text-accent">
+                        <span className="text-blue-500">
                           {item.duration}
                         </span>
                         <h3>
                           {item.position}
                         </h3>
                         <div className="flex items-center gap-3">
-                          <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                          <span className="w-[6px] h-[6px] rounded-full bg-blue-500"></span>
                           <p className="text-white/60">{item.company}</p>
                         </div>
                       </li>
@@ -224,14 +224,14 @@ const Resume = () => {
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((item, index) => (
                       <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
-                        <span className="text-accent">
+                        <span className="text-blue-500">
                           {item.duration}
                         </span>
                         <h3>
                           {item.degree}
                         </h3>
                         <div className="flex items-center gap-3">
-                          <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                          <span className="w-[6px] h-[6px] rounded-full bg-blue-600"></span>
                           <p className="text-white/60">{item.institution}</p>
                         </div>
                       </li>

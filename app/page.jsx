@@ -1,19 +1,20 @@
+'use client';
+
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
-const DownloadButton = () => {
-  const handleDownload = () => {
-    const pdfUrl = "/assets/pdf/ton-fichier.pdf"; // Chemin vers ton fichier PDF dans le dossier public
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "ton-fichier.pdf"; // Nom du fichier téléchargé
-    link.click();
-  };}
+const handleDownload = () => {
+  const pdfUrl = "/assets/pdf/cvkaniki.pdf"; // Chemin vers ton fichier PDF dans le dossier public
+  const link = document.createElement("a");
+  link.href = pdfUrl;
+  link.download = "cvkaniki.pdf"; // Nom du fichier téléchargé
+  link.click();
+};
+
 const Home = () => {
-  
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
