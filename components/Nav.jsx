@@ -33,13 +33,14 @@ const Nav = () => {
   return (
     <nav className="flex gap-8">
       {links.map((link, index) => {
+        const isActive = link.path === pathname;
         return (
           <Link
             href={link.path}
-            key={index}
+            key={link.path} // Utilisation d'une clé unique basée sur le chemin
             className={`
-              ${link.path === pathname && "text-blue-500 border-b-2 border-blue-500"}
               capitalize font-medium hover:text-blue-500 transition-all
+              ${isActive ? "text-blue-500 border-b-2 border-blue-500" : ""}
             `}
           >
             {link.name}
