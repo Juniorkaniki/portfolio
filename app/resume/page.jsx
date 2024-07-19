@@ -11,7 +11,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 const about = {
   title: "A propos de moi",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil mollitia excepturi, corporis amet fugit voluptate, in quaerat dolores, nulla magni hic aspernatur velit aliquam atque repellat provident autem deserunt accusantium?",
+    "Je suis Kaniki Junior, un jeune développeur congolais qui a fait ses études en informatique de gestion à l'ISIG Goma. Je suis développeur mobile en Flutter et Dart, mais j'ai également fait un peu de graphisme avec Photoshop et Illustrator, ainsi que la création de maquettes avec Adobe XD et Figma.",
   info: [
     {
       fieldName: "Name",
@@ -53,7 +53,7 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "Mon Experiences",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil mollitia excepturi, corporis amet fugit voluptate, in quaerat dolores, nulla magni hic aspernatur velit aliquam atque repellat provident autem deserunt accusantium?",
+    "Mon expérience dans le développement d'applications mobiles date de quelques années déjà. Après ma formation en développement mobile avec Flutter et Dart chez CRES, dans le programme Ujuzi, je continue l'auto-formation pour affiner mes compétences en faisant également du développement desktop et du graphisme.",
   items: [
     {
       company: "RME",
@@ -98,7 +98,7 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "Mon Education",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil mollitia excepturi, corporis amet fugit voluptate, in quaerat dolores, nulla magni hic aspernatur velit aliquam atque repellat provident autem deserunt accusantium?",
+    "Concernant mon éducation, tout juste après avoir obtenu mon diplôme d'État, j'ai commencé à faire une année préparatoire à l'ULPGL. Cela m'a beaucoup aidé à comprendre le monde académique. Pour ma première, deuxième et troisième année de graduat, je les ai faites à l'ISIG-Goma où j'ai vraiment appris beaucoup de choses en développement d'applications web, mobiles et desktop, mais également dans d'autres domaines informatiques comme les réseaux, le cloud computing, les algorithmes, etc. Mes années de licence, je les ai également faites à l'ISIG-Goma, ce qui a vraiment affiné mes connaissances dans plusieurs domaines informatiques, notamment en développement d'applications.",
   items: [
     {
       institution: "Tupedane Institut",
