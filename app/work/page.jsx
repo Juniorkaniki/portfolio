@@ -17,14 +17,14 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
+    category: "Mobile App",
     title: "Project 1",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, laborum repellendus deserunt nesciunt amet dolore possimus. Ipsa ab, nostrum tempora, inventore quisquam minima culpa voluptate ad tenetur consequatur impedit incidunt",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
+      "Développement d'une application pour une association de développeurs dans plusieurs domaines. Le projet est actuellement en pause pour des raisons internes.",
+    stack: [{ name: "Flutter" }, { name: "Dart" }, { name: "My Sql" }],
     image: "/assets/work/thumb1.png",
     live: "",
-    github: "",
+    github: "https://github.com/Juniorkaniki/portfolio",
   },
   {
     num: "02",

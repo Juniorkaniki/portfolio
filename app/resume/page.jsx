@@ -135,9 +135,9 @@ const education = {
 
 // Skills
 const skills = {
-  title: "My skills",
+  title: "Mes compétences",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil mollitia excepturi, corporis amet fugit voluptate, in quaerat dolores, nulla magni hic aspernatur velit aliquam atque repellat provident autem deserunt accusantium?",
+    "J’ai programmé en Flutter et Dart pendant plusieurs années, ainsi qu'en C#. J’ai également conçu des interfaces utilisateur avec Adobe XD et acquis d’autres compétences dans le développement web à la faculté, ainsi que lors de formations professionnelles et d’auto-formation.",
   skillList: [
     {
       icon: <SiFlutter />,
