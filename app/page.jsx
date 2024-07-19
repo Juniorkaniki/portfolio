@@ -26,8 +26,7 @@ const Home = () => {
               Hello, I'm <br /> <span className="text-blue-500">Kaniki Junior</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/70">
-              I excel at crafting elegant digital experiences and I am proficient in various programming languages and technologies.
-            </p>
+            J'excelle dans la création d'expériences numériques élégantes et je maîtrise divers langages et technologies de programmation, ce qui me permet de développer des solutions innovantes et performantes.            </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button
                 variant="outline"

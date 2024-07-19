@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { FaHtml5, FaJs, FaCss3, FaFigma, FaNodeJs, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiFlutter, SiDart, SiCsharp, SiAdobephotoshop, SiAdobeillustrator } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from 'framer-motion';
@@ -127,7 +127,7 @@ const education = {
     },
     {
       institution: "CFPI-GOMA",
-      degree: "Web programming",
+      degree: "analyse de donnes",
       duration: "2023",
     },
   ],
@@ -140,6 +140,18 @@ const skills = {
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil mollitia excepturi, corporis amet fugit voluptate, in quaerat dolores, nulla magni hic aspernatur velit aliquam atque repellat provident autem deserunt accusantium?",
   skillList: [
     {
+      icon: <SiFlutter />,
+      name: "Flutter",
+    },
+    {
+      icon: <SiDart />,
+      name: "Dart",
+    },
+    {
+      icon: <SiCsharp />,
+      name: "C#",
+    },
+    {
       icon: <FaHtml5 />,
       name: "HTML 5",
     },
@@ -147,32 +159,28 @@ const skills = {
       icon: <FaCss3 />,
       name: "CSS 3",
     },
-    
     {
       icon: <FaJs />,
       name: "JavaScript",
-    },
-   
-    {
-      icon: <FaReact />,
-      name: "React.js",
-    },
-    {
-      icon: <SiNextdotjs />,
-      name: "Next.js",
     },
     {
       icon: <SiTailwindcss />,
       name: "Tailwind CSS",
     },
     {
-      icon: <FaNodeJs />,
-      name: "Node.js",
-    },
-    {
       icon: <FaFigma />,
       name: "Figma",
     },
+    
+    {
+      icon: <SiAdobephotoshop />,
+      name: "Photoshop",
+    },
+    {
+      icon: <SiAdobeillustrator />,
+      name: "Illustrator",
+    },
+    
   ],
 };
 
@@ -231,7 +239,7 @@ const Resume = () => {
                           {item.degree}
                         </h3>
                         <div className="flex items-center gap-3">
-                          <span className="w-[6px] h-[6px] rounded-full bg-blue-600"></span>
+                          <span className="w-[6px] h-[6px] rounded-full bg-blue-500"></span>
                           <p className="text-white/60">{item.institution}</p>
                         </div>
                       </li>
@@ -252,7 +260,7 @@ const Resume = () => {
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
                             <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
+                              <div className="text-6xl group-hover:text-blue-500 transition-all duration-300">{skill.icon}</div>
                             </TooltipTrigger>
                             <TooltipContent>
                               <p className="capitalaze">{skill.name}</p>
