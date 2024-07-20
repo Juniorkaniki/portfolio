@@ -145,7 +145,7 @@ const Work = () => {
                         <Image
                           src={project.image} 
                           layout="fill"
-                          objectFit="cover"
+                          objectFit="cover"  
                           className="object-cover"
                           alt={project.title}
                         />
