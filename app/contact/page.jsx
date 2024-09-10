@@ -97,9 +97,7 @@ const Contact = () => {
             >
               <h3 className="text-4xl text-blue-500 ">Travaillons ensembles !!</h3>
               <p className="text-white/60">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Laborum enim molestias eos ratione magni dolores quas et eius
-                dolor, fuga nulla? Architecto
+              Nous sommes passionnés et avons une solide expérience dans la création de solutions informatiques innovantes. Nous avons acquis des compétences approfondies en développement de logiciels, conception d'interfaces utilisateur, et intégration de technologies modernes. Pour profiter de nos services, laissez-nous un message.
               </p>
               {/* hidden input for redirection */}
               <input type="hidden" name="_next" value="https://semanumerique.com" />
