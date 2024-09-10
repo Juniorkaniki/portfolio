@@ -28,22 +28,22 @@ const projects = [
   },
   {
     num: "02",
-    category: "fullstack",
+    category: " Joby App",
     title: "Project 2",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, laborum repellendus deserunt nesciunt amet dolore possimus. Ipsa ab, nostrum tempora, inventore quisquam minima culpa voluptate ad tenetur consequatur impedit incidunt",
-    stack: [{ name: "Next,js" }, { name: "Tailwind.css" }, { name: "node.js" }],
+      "Joby est une application qui aide plusieurs personnes à être tenues au courant des offres d'emploi en temps réel et à trouver un travail facilement.",
+    stack: [{ name: "Flutter" }, { name: "Dart" }, { name: "My Sql" }],
     image: "/assets/work/thumb2.png",
     live: "",
     github: "",
   },
   {
     num: "03",
-    category: "frontend",
+    category: "Porfolio personne",
     title: "Project 3",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, laborum repellendus deserunt nesciunt amet dolore possimus. Ipsa ab, nostrum tempora, inventore quisquam minima culpa voluptate ad tenetur consequatur impedit incidunt",
-    stack: [{ name: "Next.js" }, { name: "Tailwind" }],
+      "Ce portfolio personnel a été développé pour présenter mon travail en tant que développeur et informaticien. Il inclut une sélection de projets réalisés au cours de ma carrière, allant de conceptions des applications mobiles et des applications Desktop fonctionnelles. Le site met en avant mon expertise en design d'interface utilisateur, en développement mobile et en création de contenu visuel.",
+    stack: [{ name: "Next,js" }, { name: "Tailwind.css" }, ],
     image: "/assets/work/thumb3.png",
     live: "",
     github: "",
